@@ -1,0 +1,15 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read access to victims and resources for dashboard
+    match /victims/{document=**} {
+      allow read: if true;
+      allow write: if true;
+    }
+    match /resources/{document=**} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}
