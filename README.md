@@ -226,7 +226,7 @@ Use `case_id` as the main operational identifier and partition high-volume colle
 ## Project Structure
 
 ```text
-AI-Crisis-Management/
+crisis-voiceops-with-azure/
 ├── README.md
 ├── docs/
 │   └── AZURE_SOLUTION.md
